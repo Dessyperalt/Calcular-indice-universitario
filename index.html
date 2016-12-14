@@ -1,0 +1,72 @@
+<!--* Calculo de indice
+ * Copyright 2016 Desiree Peralta Encarnacion
+ * DesireePeraltaE@gmail.com
+ * https://github.com/Dessyperalt -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculo de indice</title>
+	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link rel="stylesheet" type="text/css" href="css/Style.css">
+	    <link rel="stylesheet" type="text/css" href="css/StyleImpresion.css" media="print">
+</head>
+<body>
+
+	<div class="panel panel-default">
+	 
+	  <div class="panel-body">
+
+	  <div class="panel panel-default panelSiglas">	  		
+		  <div class="panel-body">
+		  	<h4>Resultados:</h4>
+		    <label>No. Creditos: </label><span id = "ResultadoCredito">0</span><br/>
+		    <label>Indice: </label><span id = "Indice">0.00</span><br/>
+		    <label>Condicion: </label><span id = "Condicion">- </span>
+		  </div>
+		</div>
+
+	    	<label for="Materia">Materia:</label>
+	  		<input type="text" class="form-control" maxlength="40" placeholder="Materia" aria-describedby="basic-addon1" name = "Materia" id ="Materia">
+	  		<br/>
+	  		<label for="NoCreditos" >Numero de creditos:</label>
+	  		<input type="text" class="form-control" maxlength="40" placeholder="0" aria-describedby="basic-addon1" name = "NoCreditos" id = "NoCreditos">
+	  		<br/>
+	  		<label for="Nota" >Nota:</label>
+	  		<input type="text" class="form-control" maxlength="40" placeholder="0" aria-describedby="basic-addon1" name = "Nota" id = "Nota">
+	  		<br/>
+	  		<button class = "btn btn-primary" onClick="agregar()">Agregar</button>
+	  		<button class = "btn btn-success" onClick="calculo()">Calcular</button>
+	  		<button class = "btn btn-warning" onClick ="imprimir()">imprimir</button>
+	  		<button class = "btn btn-danger" onClick="borrar()">Borrar</button>
+	  </div>
+	</div>
+	<h1 class = "TituloImpresion">Calculo de indice: </h1>
+
+	<div class="panel panel-default resultadoPanel">
+		<div class="panel-body">
+			 <table class="table table-striped" id = "Materias">
+			    <thead>
+			      <tr>
+			        <th>Materia</th>
+			        <th>Numero de credito</th>
+			        <th>Nota</th>
+			        <th>Letra</th>
+			      </tr>
+			    </thead>
+			  </table>
+		</div>
+	</div>
+
+
+	<center>© 2016 Desiree Peralta</center>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/javaS.js" type="text/javascript"></script>
+	    <script type="text/javascript">
+	</script>
+</body>
+</html>
