@@ -1,0 +1,73 @@
+.form-control
+{
+	width: 180px;
+
+}
+.panelSiglas
+{
+	float: right;
+	width: 20%;
+}
+
+.inputMax
+{
+	width: 60%
+}
+
+.quincenal, .mensual, .anual
+{
+	width: 32.6%;
+	float: left;
+}
+.quincenal, .mensual
+{
+	margin-right: 10px;
+}
+
+.inputTotal
+{
+	margin-top: 0px;
+	display: initial;
+}
+
+.form-control[readonly]
+{
+	background-color: white; 
+}
+.titulo
+{
+	float: right;
+    color: #ccc;
+	font-size: 20px;
+}
+button, input, label{
+
+	visibility: hidden;
+}
+.panelSiglas label, .TituloImpresion
+{
+	visibility: visible;
+	display: inline;
+}
+.TituloImpresion
+{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+table
+{
+  margin-top: 30px;
+  margin-bottom: 100px;
+
+}
+td, th
+{
+	padding-right: 100px;
+	text-align: left;
+
+}
+td{
+	text-align: center;
+}
+
